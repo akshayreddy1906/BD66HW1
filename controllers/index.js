@@ -1,31 +1,28 @@
-let employees = [
+let movies = [
   {
-      employeeId: 1,
-      name: 'Rahul Sharma',
-      email: 'rahul.sharma@example.com',
-      departmentId: 1,
-      roleId: 1,
+    'movieId': 1,
+    'title': 'Inception',
+    'genre': 'Sci-Fi',
+    'director': 'Christopher Nolan'
   },
   {
-      employeeId: 2,
-      name: 'Priya Singh',
-      email: 'priya.singh@example.com',
-      departmentId: 2,
-      roleId: 2,
+    'movieId': 2,
+    'title': 'The Shawshank Redemption',
+    'genre': 'Drama',
+    'director': 'Frank Darabont'
   },
   {
-      employeeId: 3,
-      name: 'Ankit Verma',
-      email: 'ankit.verma@example.com',
-      departmentId: 1,
-      roleId: 3,
-  },
-];
+    'movieId': 3,
+    'title': 'The Godfather',
+    'genre': 'Crime',
+    'director': 'Francis Ford Coppola'
+  }
+]
 
-function getAllEmployees(){
-    return employees;   
+function getAllMovies(){
+    return movies;   
 };
-function getEmployeeById(id){
-    return employees.find((employee) => employee.employeeId === id);
+function getMovieById(id){
+    return movies.find((Movie) => Movie.movieId === id);
 };
-module.exports = { getAllEmployees,getEmployeeById}
+module.exports = { getAllMovies,getMovieById}

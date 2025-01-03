@@ -70,8 +70,8 @@ describe("API Endpoint tests", () => {
              }
            ]
         });
-    });
         expect(res.body.movies.length).toBe(3);
+      });
     it("GET /movies/details/:id should get an movie by ID", async () => {
         const res = await request(server).get("/movies/details/1");
         expect(res.status).toBe(200);

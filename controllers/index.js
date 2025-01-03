@@ -22,7 +22,7 @@ let movies = [
 function getAllMovies(){
     return movies;   
 };
-function getMovieById(id){
+function getMoviesById(id){
     return movies.find((Movie) => Movie.movieId === id);
 };
-module.exports = { getAllMovies,getMovieById}
+module.exports = { getAllMovies,getMoviesById}
